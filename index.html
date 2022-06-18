@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+		<header>
+			<div class="btn btn-info btn-send">送出</div>
+		</header>
+		<nav></nav>
+		<section>
+			<div class="container">
+				<article id="article1" class="article article1">
+					<h1>遊戲折扣回報表單</h1>
+					<h2>讓大家分享近期的遊戲折扣資訊</h2>
+					<p></p>
+					<p></p>
+				</article>
+				<article id="article2" class="article article2">
+					<h3></h3>
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">遊戲名稱</span>
+						<input type="text" class="form-control" id="gameName" name="gameName" placeholder="請填全名">
+					</div>
+					<div class="input-group mb-3">
+						<span class="input-group-text">折扣數</span>
+						<input type="text" class="form-control" id="discount" name="discount" >
+						<span class="input-group-text">%off</span>
+					</div>
+
+
+					<!-- input:r -->
+					
+					<div class="input-group mb-3">
+						<label class="input-group-text" for="platformType">折扣平台</label>
+						<select class="form-select"  name="platformType" id="platformType">
+							<option value="none" disabled selected hidden>請選擇該遊戲折扣的平台</option>
+							<option value="Steam">Steam</option>
+							<option value="Fanatical">Fanatical</option>
+							<option value="Greenmangaming">Greenmangaming</option>
+							<option value="Origin">Origin</option>
+							<option value="Upaly">Upaly</option>
+							<option value="GOG">GOG</option>
+							<option value="Epic">Epic</option>
+							<option value="HumbleBundle">HumbleBundle</option>
+						</select>
+					</div>
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">折扣結束日期</span>
+						<input type="text" class="form-control" id="enddate" name="enddate" placeholder="請填寫 XX(月)/XX(日)，例：6/20">
+					</div>
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">現在價格(折扣後價格)</span>
+						<input type="text" class="form-control" id="nowprice" name="nowprice">
+						<span class="input-group-text">NTD</span>
+					</div>
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">原始價格(折扣前價格)</span>
+						<input type="text" class="form-control" id="originalprice" name="originalprice">
+						<span class="input-group-text">NTD</span>
+					</div>
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">歷史最低價格</span>
+						<input type="text" class="form-control" id="lowestprice" name="lowestprice">
+						<span class="input-group-text">NTD</span>
+					</div>
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">Steam評論</span>
+						<input type="text" class="form-control" id="evaluation" name="evaluation">
+						<span class="input-group-text">%好評</span>
+					</div>
+
+					<article id="article6" class="article article6">
+						<p>遊戲心得、評論與推薦原因</p>
+						<div class="input-group mb-3">
+							<textarea class="form-control" name="experience" id="experience" placeholder="自由填答"></textarea>
+						</div>
+					</article>
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">折扣平台</span>
+						<div class="input-group-text bg-white flex-fill">
+							<div class="input-group flex-column">
+								<div class="input-group">
+									<div class="input-group-text bg-white">
+										<input class="form-check-input mt-0" type="radio" name="discount" id="discount1" value="Steam">
+									</div>
+									<label class="input-group-text flex-fill" for="discount1">Steam</label>
+								</div>
+								<div class="input-group">
+									<div class="input-group-text bg-white">
+										<input class="form-check-input mt-0" id="discount2" type="radio" name="discount2" value="其他">
+									</div>
+									<label for="discount2" class="input-group-text">其他</label>
+									<input type="text" class="form-control" id="discount2text" name="discount2text" placeholder="請詳述，謝謝">
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">職稱</span>
+						<input type="text" class="form-control" id="userTitle" name="userTitle" placeholder="如：中心主任、組長、教授、博後、研究專員⋯⋯等">
+					</div>
+					
+					<div class="input-group mb-3">
+						<label class="input-group-text" for="userIdentity">身分別</label>
+						<select class="form-select"  name="userIdentity" id="userIdentity">
+							<option value="none" disabled selected hidden>請選擇您目前擔任的最高行政職別，或其他身分</option>
+							<option value="一級單位主管">一級單位主管</option>
+							<option value="程式設計課程執行單位主管">程式設計課程執行單位主管</option>
+							<option value="程式設計課程教師">程式設計課程教師</option>
+							<option value="程式設計課程之其他相關人員">程式設計課程之其他相關人員</option>
+						</select>
+					</div>
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">聯絡電話</span>
+						<input type="text" class="form-control" id="userTel" name="userTel" placeholder="">
+					</div>
+					<div class="input-group mb-3">
+						<span class="input-group-text">email</span>
+						<input type="text" class="form-control" id="userEmail" name="userEmail" placeholder="會以信箱聯絡，請確保信箱通暢，謝謝">
+					</div>
+
+				</article>
+				<article id="article3" class="article article3">
+					<h3>二、防疫上課期間狀況</h3>
+					<p>老師好</p>
+					<p>此區搜集老師在防疫期間所遇之問題與建議，希望了解老師們居家線上教學的狀況，為安排更貼近老師需求之工作坊使用。</p>
+					<p>感謝老師耐心填答。</p>
+				</article>
+				<article id="article4" class="article article4">
+					
+					<!-- input:c -->
+					<p>防疫期間教學所遇困難與需求（可於其他部分詳述）</p>
+					
+					
+					<div class="input-group flex-fill flex-column bg-white">
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed1-1" type="checkbox" name="userNeed1" value="線上教學方法">
+							</div>
+							<label for="userNeed1-1" class="input-group-text flex-fill">線上教學方法</label>
+						</div>
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed1-2" type="checkbox" name="userNeed1" value="線上課程教案設計">
+							</div>
+							<label for="userNeed1-2" class="input-group-text flex-fill">線上課程教案設計</label>
+						</div>
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed1-3" type="checkbox" name="userNeed1" value="設備與軟體操作">
+							</div>
+							<label for="userNeed1-3" class="input-group-text flex-fill">設備與軟體操作</label>
+						</div>
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed1-4" type="checkbox" name="userNeed1" value="無法掌握學生學習狀況">
+							</div>
+							<label for="userNeed1-4" class="input-group-text flex-fill">無法掌握學生學習狀況</label>
+						</div>
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed1-5" type="checkbox" name="userNeed1" value="其他">
+							</div>
+							<label for="userNeed1-5" class="input-group-text">其他</label>
+							<input class="input-group-text bg-white flex-fill text-start" type="text" id="userNeed1-5-text" name="userNeed1-5-text" placeholder="請詳述，謝謝">
+						</div>
+					</div>
+
+
+				</article>
+				<article id="article5" class="article5">
+
+					<p>防疫期間學生學習所遇困難與需求</p>
+					<div class="input-group flex-fill flex-column bg-white">
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed2-1" type="checkbox" name="userNeed2" value="學習效果不佳">
+							</div>
+							<label for="userNeed2-1" class="input-group-text flex-fill">學習效果不佳</label>
+						</div>
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed2-2" type="checkbox" name="userNeed2" value="學生容易分心">
+							</div>
+							<label for="userNeed2-2" class="input-group-text flex-fill">學生容易分心</label>
+						</div>
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed2-3" type="checkbox" name="userNeed2" value="學生設備不足以因應線上教學">
+							</div>
+							<label for="userNeed2-3" class="input-group-text flex-fill">學生設備不足以因應線上教學</label>
+						</div>
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed2-4" type="checkbox" name="userNeed2" value="身心健康疑慮">
+							</div>
+							<label for="userNeed2-4" class="input-group-text flex-fill">身心健康疑慮</label>
+						</div>
+						<div class="input-group">
+							<div class="input-group-text bg-white">
+								<input class="form-check-input mt-0" id="userNeed2-5" type="checkbox" name="userNeed2" value="其他">
+							</div>
+							<label for="userNeed2-5" class="input-group-text">其他</label>
+							<input type="text" class="form-control" id="userNeed2-5-text" name="userNeed2-5-text" placeholder="請詳述，謝謝">
+						</div>
+					</div>
+
+				</article>
+				<article id="article6" class="article article6">
+					<p>防疫期間所遇其他之困難與建議</p>
+					<div class="input-group mb-3">
+						<textarea class="form-control" name="userNeed3" id="userNeed3" placeholder="自由填答"></textarea>
+					</div>
+				</article>
+				<article id="article7" class="article article7">
+					<p>想跟主辦單位或是講師說的話</p>
+					<div class="input-group mb-3">
+						<textarea class="form-control" name="userNeed4" id="userNeed4" placeholder="自由填答"></textarea>
+					</div>
+				</article>
+				<article id="article8" class="article article8">
+					<p>謝謝你的填寫</p>
+				</article>
+			</div>
+		</section>
+		<footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
+  </body>
+</html>
